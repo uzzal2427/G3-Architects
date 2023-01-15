@@ -120,11 +120,10 @@ main{
     height: 1059px;
     margin: 100px auto;
     display: flex;
-    /* grid-template-columns: repeat(2, 1fr); */
     gap: 54px;
 }
 .love-enjoy-text{
-    width: 100%px;
+    width: 100%;
     height: 982px;
 }
 .love-enjoy-text h3{
@@ -145,7 +144,7 @@ main{
     color: #727272;
 }
 .small-box{
-    width: 100%px;
+    width: 100%;
     height: 171px;
     padding: 30px 35px;
     margin: 25px 0;
@@ -206,6 +205,9 @@ main{
     border-radius: 8px;
     width: 241.83px;
     height: 241.83px;
+}
+.small-box-2:hover{
+    background-color:#FF900E;
 }
 .box-2{
     display: flex;
@@ -271,3 +273,65 @@ footer p{
     color: #424242;
 }
 /* end */
+/* media */
+
+@media screen and (max-width: 600px){
+    .hide{
+        display: none;
+    }
+    .top-section,
+    .header-manu ul,
+    .Features,
+    .love-enjoy
+    {
+        padding: 0;
+        flex-direction: column;
+    }
+    .Features{
+        width: 80%;
+        height: 100%;
+    }
+    .banner-text{
+        width: 95%;
+        height: 100%;
+    }
+    .banner-text h1{
+        padding: 0;
+        font-size: 2.5rem;
+        text-align: left;
+    }
+    .banner-images{
+        padding: 5px;
+    }
+    .banner-images img{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .features-img img, .love-enjoy-images img{
+        width: 95%;
+        height: 100%;
+    }
+    .love-enjoy, .some-facts, .sponspors{
+        width: 95%;
+        height: 100%;
+    }
+    .small-box p,  .love-enjoy-text p, .some-facts p{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .small-box-continer{
+        padding: 5px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3px;
+    }
+    .spons-icon{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 5px;
+    }
+
+   
+}
